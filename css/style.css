@@ -5,57 +5,26 @@
 }
 
 .me {
-  float: left;
-  font-size: 24px;
+	float: left;
+	font-size: 24px;
 }
 
 nav {
-  float: right;
-  font-size: 18px;
+	float: right;
+	font-size: 18px;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 nav li {
-  display: inline-block;
+	display: inline-block;
 }
 
-a {
-  text-decoration: none;
-}
-
-.left {
-	width: 50%;
-	float: left;
-}
-
-.right {
-	width: 50%;
-	float: left;
-}
-
-.1_1 {
-	width: 100%;
-	float: left;
-	text-align: center;
-}
-
-.1_2 {
-	width: 30%;
-	float: left;
-}
-
-.text_left {
-	width: 50%;
-	float: left;
-}
-
-.text_right {
-	width: 50%;
-	list-style-type: none;
-	float: left;
+nav a {
+	text-decoration: none;
+	line-height: 38px;
 }
