@@ -1,6 +1,5 @@
 .container{
 	width: 100%;
-	max-width: 1024px;
 	padding: 20px 15px;
 	margin: 0 auto;
 }
@@ -30,12 +29,12 @@ a {
 }
 
 .left {
-	width: 30%;
+	width: 50%;
 	float: left;
 }
 
 .right {
-	width: 30%;
+	width: 50%;
 	float: right;
 }
 
@@ -51,12 +50,12 @@ a {
 }
 
 .text_left {
-	width: 30%;
+	width: 50%;
 	float: left;
 }
 
 .text_right {
-	width: 30%;
+	width: 50%;
 	list-style-type: none;
 	float: right;
 }
