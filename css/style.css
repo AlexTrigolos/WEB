@@ -30,12 +30,12 @@ a {
 }
 
 .left {
-	width: 50%;
+	width: 30%;
 	text-align: left;
 }
 
 .right {
-	width: 50%;
+	width: 30%;
 	text-align: right;
 }
 
@@ -46,17 +46,17 @@ a {
 }
 
 .1_2 {
-	width: 50%;
+	width: 30%;
 	float: left;
 }
 
 .text_left {
-	width: 50%;
+	width: 30%;
 	text-align: left;
 }
 
 .text_right {
-	width: 50%;
+	width: 30%;
 	list-style-type: none;
 	text-align: right;
 }
