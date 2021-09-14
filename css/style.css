@@ -35,7 +35,7 @@ a {
 
 .right {
 	width: 50%;
-	float: right;
+	float: left;
 }
 
 .1_1 {
@@ -57,5 +57,5 @@ a {
 .text_right {
 	width: 50%;
 	list-style-type: none;
-	float: right;
+	float: left;
 }
