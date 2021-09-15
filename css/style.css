@@ -28,3 +28,8 @@ nav a {
 	text-decoration: none;
 	line-height: 38px;
 }
+
+.col-1-2 {
+	width: 40%;
+	float: left;
+}
