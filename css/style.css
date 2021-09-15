@@ -4,6 +4,10 @@
 	font-family: "Times New Roman", Georgia, Serif;
 }
 
+header {
+	height: 90px
+}
+
 .me {
 	float: left;
 	font-size: 30px;
