@@ -1,7 +1,7 @@
 .container{
 	width: 100%;
 	padding: 20px 15px;
-	margin: 0 auto;
+	margin: 10px 10px;
 }
 
 .me {
@@ -30,6 +30,6 @@ nav a {
 }
 
 .col-1-2 {
-	width: 40%;
+	width: 50%;
 	float: left;
 }
