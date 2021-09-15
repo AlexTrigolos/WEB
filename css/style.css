@@ -1,7 +1,7 @@
 .container{
 	width: 100%;
-	padding: 20px 15px 20px 15px;
-	margin: 10px 10px 10px 10px;
+	padding: 20px 15px;
+	margin: 10px;
 }
 
 .me {
@@ -27,13 +27,4 @@ nav li {
 nav a {
 	text-decoration: none;
 	line-height: 38px;
-}
-
-.col-1-2 {
-	width: 50%;
-	float: left;
-}
-
-.main_foto {
-	float: right;
 }
