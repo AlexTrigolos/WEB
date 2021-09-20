@@ -1,17 +1,11 @@
 .container{
-	width: 100% - 80px;
-	padding: 30px 30px;
-	padding-bottom: 30px;
-	font-family: "Times New Roman", Georgia, Serif;
+	width: calc(100% - 60px);
+	padding: 30px;
+	font-family: "Times New Roman", Georgia, Serif, serif;
 }
 
-header {
-	height: 90px
-}
-
-.me {
-	float: left;
-	font-size: 30px;
+#me {
+    font-size: 28px;
 }
 
 nav {
@@ -20,7 +14,7 @@ nav {
 }
 
 nav ul {
-	margin: 0;
+	margin: 10px 0px 0px 0px;
 	padding: 0;
 	list-style: none;
 }
@@ -32,5 +26,72 @@ nav li {
 
 a {
 	text-decoration: none;
-	line-height: 38px;
+	color: black;
+}
+
+.col-1-2 {
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.main_text {
+	padding: 80px 40px 73px 60px;
+	width: calc(352px - 100px);
+	background: white;
+}
+
+.float_right {
+	float: right;
+}
+
+.float_left {
+	float: left;
+}
+
+#vk {
+	width: 332px;
+	background: royalblue;
+	margin-top: -30px;
+	padding: 20px 20px 20px 0;
+	margin-left: calc(50% - 352px);
+}
+
+#inst {
+	width: 332px;
+	margin-top: -30px;
+	padding: 20px 0 20px 20px;
+	background: royalblue;
+}
+
+#abc {
+	padding: 70px 50px 0px 50px;
+	margin: 0;
+	width: calc(100% - 100px);
+	background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613257286_141-p-sinii-estetichnii-fon-174.jpg);
+	background-size: 100%;
+	height: 472px;
+}
+
+.text_shadow {
+	text-shadow:  1px 1px 4px gray;
+}
+
+.text_align_center {
+	text-align: center;
+}
+
+#pad-top {
+	padding-top: 100px;
+}
+
+#text-about-me {
+	width: 500px;
+	margin-left: calc((100% - 500px) / 2);
+	word-break: break-all;
+}
+
+.small {
+	font-size: 10px;
 }
