@@ -1,26 +1,38 @@
 .container{
 	width: calc(100% - 60px);
 	padding: 30px;
-	font-family: "Times New Roman", Georgia, Serif, serif;
+	font-family: Arial, Georgia, Serif, serif;
+	font-weight: normal;
+	white-space: normal;
 }
 
 #me {
     font-size: 28px;
 }
 
+.flex {
+	display: flex;
+	height: auto;
+}
+
 nav {
-	float: right;
-	font-size: 14px;
+	width: 77%;
+	line-height: 70%;
+	display: flex;
+	justify-content: end;
+	position: absolute;
+	top: 45px;
+	right: 30px;
 }
 
 nav ul {
-	margin: 10px 0px 0px 0px;
+	margin: 10px 0 0 0;
 	padding: 0;
 	list-style: none;
 }
 
 nav li {
-	margin: 0px 5px;
+	margin: 0 5px;
 	display: inline-block;
 }
 
@@ -31,47 +43,48 @@ a {
 
 .col-1-2 {
 	width: 50%;
-	float: left;
+	display: flex;
+	justify-content: flex-end;
 	margin: 0;
 	padding: 0;
 }
 
 .main_text {
 	padding: 80px 40px 73px 60px;
-	width: calc(352px - 100px);
+	width: 254px;
 	background: white;
 }
 
-.float_right {
-	float: right;
-}
-
-.float_left {
-	float: left;
-}
-
 #vk {
-	width: 332px;
+	width: 334px;
 	background: royalblue;
 	margin-top: -30px;
 	padding: 20px 20px 20px 0;
 	margin-left: calc(50% - 352px);
+	display: flex;
+	justify-content: flex-end;
 }
 
 #inst {
-	width: 332px;
+	width: 334px;
 	margin-top: -30px;
 	padding: 20px 0 20px 20px;
 	background: royalblue;
+	display: flex;
+	justify-content: flex-start;
 }
 
 #abc {
-	padding: 70px 50px 0px 50px;
+	padding: 70px 50px 0 50px;
 	margin: 0;
 	width: calc(100% - 100px);
 	background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613257286_141-p-sinii-estetichnii-fon-174.jpg);
 	background-size: 100%;
 	height: 472px;
+	border-left: 2px ridge #1a92df;
+	border-top: 2px ridge #1a92df;
+	border-right: 2px ridge #1a92df;
+	text-decoration-line: underline;
 }
 
 .text_shadow {
@@ -83,15 +96,31 @@ a {
 }
 
 #pad-top {
-	padding-top: 100px;
+	padding-top: 70px;
 }
 
 #text-about-me {
 	width: 500px;
 	margin-left: calc((100% - 500px) / 2);
 	word-break: break-all;
+	background-color: gainsboro;
+	text-decoration-line: line-through;
+	text-decoration-style: wavy;
+}
+
+#author{
+	color: #fdb10c;
 }
 
 .small {
 	font-size: 10px;
+}
+
+.bold {
+	text-transform: uppercase;
+}
+
+.icon {
+	display: flex;
+	justify-content: flex-end;
 }
