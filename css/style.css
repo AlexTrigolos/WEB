@@ -54,7 +54,10 @@ a {
 	width: 254px;
 	background: white;
 	font-size: 16px;
-	vertical-align: auto;
+}
+
+.vert_bot {
+	vertical-align: bottom;
 }
 
 .cont_text {
