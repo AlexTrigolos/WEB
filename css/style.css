@@ -15,8 +15,6 @@
 }
 
 nav {
-    width: 70%;
-    line-height: 70%;
     display: flex;
     justify-content: end;
     position: absolute;
@@ -30,12 +28,13 @@ nav ul {
     list-style: none;
 }
 
-nav li {
+nav ul li {
     margin: 0 5px;
     display: inline-block;
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: black;
 }
@@ -277,4 +276,32 @@ input, textarea {
     .mid_icon {
         width: 354px;
     }
+}
+
+nav a:hover {
+    background: wheat;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+    margin-top: 0;
+}
+
+nav ul ul li {
+    float:none;
+    display:list-item;
+    position: relative;
+    margin: 0;
+    padding: 0 1px;
+}
+
+.active {
+    background-color: magenta;
 }

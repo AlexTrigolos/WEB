@@ -6,8 +6,8 @@
     <meta name="description" content="Site description">
     <title>Триголос Алексей M33041. Guten Tag, meine Damen und Herren :D</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/outlines.css"> -->
-    <!-- <script src="script.js"></script> -->
+<!--    <link rel="stylesheet" href="css/outlines.css">-->
+    <script src="js/script.js"></script>
 </head>
 <body id="home">
 <header class="container flex">
@@ -16,9 +16,16 @@
     <nav>
         <ul>
             <li><a href="#work_experience" class="text_shadow bold">Опыт работы</a></li>
-            <li><a href="#education" class="text_shadow bold">Образование</a></li>
             <li><a href="#skills" class="text_shadow bold">Навыки</a></li>
             <li><a href="#contacts" class="text_shadow bold">Контакты</a></li>
+            <span id="menu">
+                <li><a href="./index.html" class="text_shadow bold">Главная страница</a>
+                    <ul>
+                        <li><a href="./html/second.html" class="text_shadow bold">Вторая</a></li>
+                        <li><a href="./html/third.html" class="text_shadow bold">Третья</a></li>
+                    </ul>
+                </li>
+            </span>
         </ul>
     </nav>
 </header>
@@ -124,31 +131,6 @@
         </ul>
     </section>
     <section class="container">
-        <h3 id="education" class="bold">Образование</h3>
-        <ul>
-            <li><p>2015-2017</p>
-                <p>Магистр</p></li>
-            <li><p>2015-2017</p>
-                <p>Магистр</p></li>
-            <li><p>2015-2017</p>
-                <p>Магистр</p></li>
-        </ul>
-        <ul>
-            <li><p>Университет</p>
-                <p>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды,
-                    чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на
-                    странице.</p></li>
-            <li><p>Университет</p>
-                <p>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды,
-                    чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на
-                    странице.</p></li>
-            <li><p>Университет</p>
-                <p>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды,
-                    чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на
-                    странице.</p></li>
-        </ul>
-    </section>
-    <section class="container">
         <h3 id="skills" class="bold">Навыки</h3>
         <section>
             <div>Microsoft ExCel — продвинутый</div>
@@ -197,6 +179,9 @@
                                                                              height="50" alt="Inst"></a>
     </section>
 </main>
-<footer>© 2021 Триголос Алексей</footer>
+<footer>
+    © 2021 Триголос Алексей
+    <div id="pload"></div>
+</footer>
 </body>
 </html>
