@@ -6,6 +6,7 @@
     text-align: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .row {
@@ -20,8 +21,8 @@
     justify-content: center;
 }
 
-button {
-    margin: 0 10px;
+#delall, #delast {
+    margin: 0 3px;
 }
 
 table {
@@ -41,6 +42,10 @@ td, th {
     background-color: red;
 }
 
+#send {
+    background-color: limegreen;
+}
+
 label {
     display: flex;
     justify-content: center;
@@ -50,8 +55,17 @@ form {
     padding: 5px;
 }
 
-#col{
+#col {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    #line {
+        flex-direction: column;
+    }
+    .width {
+        width: 50%;
+    }
 }

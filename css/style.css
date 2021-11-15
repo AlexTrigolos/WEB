@@ -131,7 +131,7 @@ a {
 }
 
 .gallery_foto {
-    width: calc(1 / 3 * 100% - 23px);
+    width: 250px;
     padding: 10px;
 }
 
@@ -154,54 +154,50 @@ body {
     }
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 1px;
+.table {
+    display: grid;
+    grid-template-columns: repeat(5, calc(20% - 3px));
+    justify-content: center;
     border: 1px solid grey;
     width: 80%;
     text-align: center;
     empty-cells: hide;
     margin: auto;
+    grid-gap: 3px;
 }
 
-th {
-    font-weight: normal;
-    border: 1px solid grey;
-    color: #039;
-    padding: 10px 15px;
-    width: 20%;
-}
-
-td {
+.table div {
     border: 1px solid grey;
     color: #669;
-    border-top: 1px solid #e8edff;
     padding: 10px 15px;
 }
 
-tr:nth-child(2n) {
+.table div:nth-child(n+7):nth-child(-n+10) {
     background: #e8edff;
     font-size: 16px;
 }
 
-tr:nth-child(2n - 1) {
+.table div:nth-child(n+17):nth-child(-n+20) {
+    background: #e8edff;
+    font-size: 16px;
+}
+
+.table div:nth-child(n+12):nth-child(-n+15) {
     background: lightblue;
     font-size: 15px;
 }
 
-caption {
-    caption-side: bottom;
-    text-align: right;
-    padding: 10px 0;
-    font-size: 14px;
+.table div:nth-child(n+22):nth-child(-n+25) {
+    background: lightblue;
+    font-size: 15px;
 }
 
-tr:first-child {
-    background: lightcyan;
+.table div:nth-child(-n+5) {
+    background-color: lightcyan;
 }
 
-td:first-child {
-    background: lightcyan;
+.table div:nth-child(5n-4) {
+    background-color: lightcyan;
 }
 
 label {
@@ -228,21 +224,17 @@ input, textarea {
     label {
         width: 100px;
     }
-
-    table {
-        display: block;
-        overflow: auto;
-        max-width: 100%;
-    }
 }
 
 @media screen and (max-width: 840px) {
     nav {
         padding-top: 50px;
     }
+
     main {
         padding-top: 130px;
     }
+
     header.container {
         height: 100px;
     }
@@ -295,8 +287,8 @@ nav ul li:hover > ul {
 }
 
 nav ul ul li {
-    float:none;
-    display:list-item;
+    float: none;
+    display: list-item;
     position: relative;
     margin: 0;
     padding: 0 1px;
