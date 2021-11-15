@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Простая страничка html</title>
+    <link rel="stylesheet" href="../css/st.css">
+    <link rel="stylesheet" href="../css/lab5.css">
+<!--    <link rel="stylesheet" href="../css/outlines.css">-->
+    <script src="../js/script.js"></script>
+    <script src="../js/script1.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul id="menu">
+            <li><a href="../index.html" class="text_shadow bold">Стартовая</a></li>
+            <li><a href="./second.html" class="text_shadow bold">Вторая страница</a></li>
+            <li><a href="./third.html" class="text_shadow bold">Третья страница</a></li>
+            <li><a href="./fourth.html" class="text_shadow bold">5 лаба</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form id="line" action="">
+        <label class="width row" for="day">День недели
+            <input type="text" id="day" required>
+        </label>
+        <label class="width row" for="eo">Чётная / нечётная неделя
+            <input type="text" id="eo">
+        </label>
+        <label class="width row" for="sub">Предмет
+            <input type="text" id="sub">
+        </label>
+        <label class="width row" for="time">Время проведения
+            <input type="text" id="time">
+        </label>
+        <label class="width row" for="type">Практика / лекция
+            <input type="text" id="type">
+        </label>
+    </form>
+    <section id="buttons">
+        <button id="send">Добавить</button>
+        <button id="delast">Удалить последний</button>
+        <button id="delall">Удалить ВСЁ</button>
+    </section>
+    <section id="table">
+        <table>
+            <tr id="notdel">
+                <th>День недели</th>
+                <th>Чётность недели</th>
+                <th>Предмет</th>
+                <th>Время</th>
+                <th>Вид пары</th>
+            </tr>
+        </table>
+    </section>
+</main>
+<footer>
+    © 2021 Триголос Алексей
+    <div id="pload"></div>
+</footer>
+</body>
+</html>
