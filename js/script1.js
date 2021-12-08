@@ -1,4 +1,4 @@
-function AddRow(obj) {
+function addRow(obj) {
     let table = document.querySelector("table");
     let temp = document.querySelector("#temp");
     let d = temp.content.querySelector("#tday");
@@ -14,6 +14,21 @@ function AddRow(obj) {
     let tr = temp.content.cloneNode(true);
     table.append(tr);
 }
+function send(event){
+    event.preventDefault();
+    let day = document.querySelector("#day").value;
+    let eo = document.querySelector("#eo").value;
+    let sub = document.querySelector("#sub").value;
+    let time = document.querySelector("#time").value;
+    let type = document.querySelector("#type").value;
+    let locstor = window.localStorage;
+    locstor.setItem(id.toString(), JSON.stringify({day: day, eo: eo, sub: sub, time: time, type: type}));
+    addRow({day, eo, sub, time, type});
+    id++;
+}
+document.onkeydown = function (event) {
+    if(event.which === 13) send(event);
+}
 
 let id = 0
 window.addEventListener('load', function (e) {
@@ -22,27 +37,23 @@ window.addEventListener('load', function (e) {
     let next;
     while ((next = locstor.getItem(i.toString())) != null) {
         let mblast = JSON.parse(next);
-        AddRow(mblast);
+        addRow(mblast);
         i++;
         id++;
     }
-    document.querySelector('#send').onclick = SEND(event);
-    function SEND(event) {
+    document.querySelector('#send').onclick = function(event){
         event.preventDefault();
         let day = document.querySelector("#day").value;
         let eo = document.querySelector("#eo").value;
         let sub = document.querySelector("#sub").value;
         let time = document.querySelector("#time").value;
         let type = document.querySelector("#type").value;
-        if (sub !== "") {
-            let locstor = window.localStorage;
-            locstor.setItem(id.toString(), JSON.stringify({day: day, eo: eo, sub: sub, time: time, type: type}));
-            AddRow({day: day, eo: eo, sub: sub, time: time, type: type});
-            id++;
-        } else {
-            alert("Напишите предмет.")
-        }
+        let locstor = window.localStorage;
+        locstor.setItem(id.toString(), JSON.stringify({day: day, eo: eo, sub: sub, time: time, type: type}));
+        addRow({day, eo, sub, time, type});
+        id++;
     }
+
     document.querySelector('#delall').onclick = function (event) {
         event.preventDefault();
         let table = document.querySelector("table");
@@ -61,8 +72,10 @@ window.addEventListener('load', function (e) {
             id--;
         }
     }
-    document.onkeypress = function (event) {
-        if(event.which === 13) SEND(event);
-    }
+    // document.querySelector('#send').addEventListener('keydown', function(e) {
+    //     if (e.keyCode === 13) {
+    //         alert("!")
+    //     }
+    // });
 }, false)
 

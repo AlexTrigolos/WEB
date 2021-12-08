@@ -1,5 +1,7 @@
 const loadTime = (function () {
-    document.getElementById("pload").innerHTML = ((window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart) / 1000).toString() + ' секундs';
+    var t = window.performance.timing;
+    var time = (t.domContentLoadedEventEnd - t.navigationStart) / 1000
+    document.getElementById("pload").innerHTML = time.toString() + ' секундs';
 });
 window.addEventListener('load', function () {
     loadTime();
