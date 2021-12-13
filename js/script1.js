@@ -59,8 +59,8 @@ window.addEventListener('load', function (e) {
         let table = document.querySelector("table");
         for (let j = 0; j < id; j++) {
             table.deleteRow(id - j);
+            window.localStorage.removeItem(j.toString())
         }
-        window.localStorage.clear();
         id = 0;
     }
     document.querySelector('#delast').onclick = function (event) {
